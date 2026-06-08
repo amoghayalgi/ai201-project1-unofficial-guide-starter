@@ -536,3 +536,38 @@ The demo video covers:
 - No temporal awareness (can't answer "has X improved recently?")
 - Limited to UMN housing (transfer learning to other universities would require re-embedding)
 - Sarcasm detection (embedding model treats ironic reviews as sincere)
+
+## Project Structure
+.
+├── data/ # Source documents
+│ ├── identity_google_reviews.txt
+│ ├── marshall_google_reviews.txt
+│ ├── wahu_google_reviews.txt
+│ ├── venue_google_reviews.txt
+│ ├── grandmarc_google_reviews.txt
+│ ├── ucommons_google_reviews.txt
+│ ├── 7west_google_reviews.txt
+│ ├── living_in_dinkytown_reddit.txt
+│ ├── finding_apartment_uofm_reddit.txt
+│ ├── grandmarc_seven_corners_reddit.txt
+│ └── university_commons_reddit.txt
+│
+├── chroma_db/ # ChromaDB vector database (generated)
+│ └── [vector embeddings stored here]
+│
+├── ingest.py # Milestone 3: Document loading and chunking
+├── embed.py # Milestone 4: Embedding and retrieval
+├── generate.py # Milestone 5: Grounded generation with Groq
+├── app.py # Milestone 5: Gradio web interface
+│
+├── test_retrieval.py # Retrieval evaluation (3 queries)
+├── test_generation.py # End-to-end generation tests
+├── run_evaluation.py # Full evaluation suite (5 queries)
+├── verify_ingestion.py # Ingestion verification helper
+│
+├── requirements.txt # Python dependencies
+├── .env.example # Environment variables template
+├── .gitignore # Git ignore rules
+│
+├── planning.md # Pre-implementation planning document
+└── README.md # Project documentation (this file)
