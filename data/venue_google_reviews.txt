@@ -1,0 +1,63 @@
+Apartment: Venue at Dinkytown
+Source: Venue Google Reviews
+---
+
+Review 1
+Rating: 5/5
+As a parent of a U of M student, safety was the top concern. Property exceeded expectations in safety, cleanliness, value, and customer service. Secure underground parking and modern furnished apartments. Very clean and well-managed property. Staff is attentive and proactive about safety.
+
+---
+
+Review 2
+Rating: 5/5
+Parent of student living at the property. Very happy with fast and friendly office responses. Staff member Kasha is very helpful. Secure underground parking is a strong benefit. Would recommend for student housing.
+
+---
+
+Review 3
+Rating: 4/5
+Overall good experience living here. Move-in was smooth and unit was clean. Maintenance responds quickly. Hallways and trash rooms are well kept. Walls are thin and building can be noisy. Elevators are slow. Gym is small and missing equipment. Management is good and responsive.
+
+---
+
+Review 4
+Rating: 5/5
+Very positive living experience. Staff is friendly and helpful. Maintenance is fast and responsive. Building is clean with good gym and study spaces. Highly recommend living here.
+
+---
+
+Review 5
+Rating: 2/5
+Issues after new management took over. Lease transfer process created confusion and accusations. Leasing staff is helpful but upper management is disorganized. Apartments are visually nice but furniture is cheap.
+
+---
+
+Review 6
+Rating: 5/5
+Great place to live. Staff is friendly and helpful. Problems are quickly resolved. Good amenities, location, and overall student experience. Recommended for students in Dinkytown.
+
+---
+
+Review 7
+Rating: 1/5
+Severe maintenance and management issues. Washer, dryer, and fridge were broken for over a month. Took 6 weeks to fix appliances. Promised compensation was never delivered. Management is inconsistent and unhelpful.
+
+---
+
+Review 8
+Rating: 5/5
+Very positive experience with management and maintenance. Facilities are clean and well maintained. Staff organizes resident events and giveaways. Issues are fixed quickly, often same or next day. Good value overall.
+
+---
+
+Review 9
+Rating: 1/5
+Extremely poor experience. Apartment was dirty on move-in with bad smell and plumbing issues. Lock on unit took months to fix. Maintenance was very slow and unreliable. Office staff was polite but issues were not resolved.
+
+---
+
+Review 10
+Rating: 2/5
+Overpriced housing with unfair charges. Extra fees for room sharing and floor levels. Move-in/move-out timing is inconvenient. Building feels expensive compared to value offered.
+
+---
