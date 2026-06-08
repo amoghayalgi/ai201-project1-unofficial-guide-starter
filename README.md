@@ -495,25 +495,6 @@ The original spec anticipated using Reddit's API (via PRAW) to scrape threads li
 
 ---
 
-## Demo Video
-
-**[Link to 3-5 minute demo video will be added here]**
-
-The demo video covers:
-1. **Three different queries with source citations:**
-   - Venue maintenance query (mixed feedback)
-   - Dinkytown safety query (generally safe with precautions)
-   - Grandmarc vs 7West comparison query
-2. **One query where retrieval works well:**
-   - Dinkytown safety query narration: "The top result has a distance of 0.38, well below the 0.5 threshold. All 5 chunks are from the Dinkytown Safety thread, providing diverse perspectives on safety..."
-3. **One query where the system struggles:**
-   - Wahu price query narration: "The system returned 'mixed' feedback when the expected answer emphasizes 'most residents' feel it's not worth the price. This happened because the LLM treated a 4-star 'good value' review and multiple 1-star 'not worth it' reviews as equally weighted..."
-4. **Walkthrough of the evaluation report:**
-   - Show the evaluation table in README.md
-   - Explain the failure case for Query 2 (Wahu price)
-
----
-
 ## Final Notes
 
 **Total implementation time:** ~10-12 hours across 6 milestones
@@ -538,36 +519,37 @@ The demo video covers:
 - Sarcasm detection (embedding model treats ironic reviews as sincere)
 
 ## Project Structure
+```text
 .
-├── data/ # Source documents
-│ ├── identity_google_reviews.txt
-│ ├── marshall_google_reviews.txt
-│ ├── wahu_google_reviews.txt
-│ ├── venue_google_reviews.txt
-│ ├── grandmarc_google_reviews.txt
-│ ├── ucommons_google_reviews.txt
-│ ├── 7west_google_reviews.txt
-│ ├── living_in_dinkytown_reddit.txt
-│ ├── finding_apartment_uofm_reddit.txt
-│ ├── grandmarc_seven_corners_reddit.txt
-│ └── university_commons_reddit.txt
+├── data/                                    # Source documents
+│   ├── identity_google_reviews.txt
+│   ├── marshall_google_reviews.txt
+│   ├── wahu_google_reviews.txt
+│   ├── venue_google_reviews.txt
+│   ├── grandmarc_google_reviews.txt
+│   ├── ucommons_google_reviews.txt
+│   ├── 7west_google_reviews.txt
+│   ├── living_in_dinkytown_reddit.txt
+│   ├── finding_apartment_uofm_reddit.txt
+│   ├── grandmarc_seven_corners_reddit.txt
+│   └── university_commons_reddit.txt
 │
-├── chroma_db/ # ChromaDB vector database (generated)
-│ └── [vector embeddings stored here]
+├── chroma_db/                               # ChromaDB vector database (generated)
+│   └── [vector embeddings stored here]
 │
-├── ingest.py # Milestone 3: Document loading and chunking
-├── embed.py # Milestone 4: Embedding and retrieval
-├── generate.py # Milestone 5: Grounded generation with Groq
-├── app.py # Milestone 5: Gradio web interface
+├── ingest.py                                # Milestone 3: Document loading and chunking
+├── embed.py                                 # Milestone 4: Embedding generation and retrieval
+├── generate.py                              # Milestone 5: Grounded response generation using Groq
+├── app.py                                   # Milestone 5: Gradio web interface
 │
-├── test_retrieval.py # Retrieval evaluation (3 queries)
-├── test_generation.py # End-to-end generation tests
-├── run_evaluation.py # Full evaluation suite (5 queries)
-├── verify_ingestion.py # Ingestion verification helper
+├── test_retrieval.py                        # Retrieval evaluation (3 test queries)
+├── test_generation.py                       # End-to-end generation tests
+├── run_evaluation.py                        # Full evaluation suite (5 test queries)
+├── verify_ingestion.py                      # Ingestion verification helper
 │
-├── requirements.txt # Python dependencies
-├── .env.example # Environment variables template
-├── .gitignore # Git ignore rules
+├── requirements.txt                         # Python dependencies
+├── .env.example                             # Environment variables template
+├── .gitignore                               # Git ignore rules
 │
-├── planning.md # Pre-implementation planning document
-└── README.md # Project documentation (this file)
+├── planning.md                              # Pre-implementation planning document
+└── README.md                                # Project documentation
